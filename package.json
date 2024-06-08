@@ -1,0 +1,23 @@
+{
+  "name": "create-turbowarp-extension",
+  "version": "1.0.0",
+  "description": "Easy to use CLI for creating advanced TurboWarp extensions",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-turbowarp-extension": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dumosgit.xyz/dumorando/create-turbowarp-extension"
+  },
+  "author": "dumorando",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "prompt-promise": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2"
+  }
+}

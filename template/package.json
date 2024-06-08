@@ -1,0 +1,21 @@
+{
+  "name": "my-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:esbuild": "esbuild extension.js --bundle --outfile=build/out.js",
+    "build:minify": "terser build/out.js -c -m -o build/out.min.js",
+    "build": "npm run clean && mkdir build && npm run build:esbuild && npm run build:minify",
+    "clean": "rimraf build"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@dumorando/turbowarp-extension-types": "^1.0.0",
+    "esbuild": "0.21.4",
+    "rimraf": "latest",
+    "terser": "latest"
+  }
+}
